@@ -4,7 +4,7 @@
  * This will overwrite the default meta character type tag with HTML5 version.
  */
 
-function flat_zymphonies_theme_html_head_alter(&$head_elements) {
+function flat_zymphonies_html_head_alter(&$head_elements) {
   $head_elements['system_meta_content_type']['#attributes'] = array(
     'charset' => 'utf-8'
   );
@@ -13,7 +13,7 @@ function flat_zymphonies_theme_html_head_alter(&$head_elements) {
 /**
  * Insert themed breadcrumb page navigation at top of the node content.
  */
-function flat_zymphonies_theme_breadcrumb($variables) {
+function flat_zymphonies_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
   if (!empty($breadcrumb)) {
     // Use CSS to hide titile .element-invisible.
@@ -28,7 +28,7 @@ function flat_zymphonies_theme_breadcrumb($variables) {
 /**
  * Override or insert variables into the page template.
  */
-function flat_zymphonies_theme_preprocess_page(&$vars) {
+function flat_zymphonies_preprocess_page(&$vars) {
   if (isset($vars['main_menu'])) {
     $vars['main_menu'] = theme('links__system_main_menu', array(
       'links' => $vars['main_menu'],
@@ -66,7 +66,7 @@ function flat_zymphonies_theme_preprocess_page(&$vars) {
 /**
  * Duplicate of theme_menu_local_tasks() but adds clearfix to tabs.
  */
-function flat_zymphonies_theme_menu_local_tasks(&$variables) {
+function flat_zymphonies_menu_local_tasks(&$variables) {
   $output = '';
 
   if (!empty($variables['primary'])) {
@@ -87,14 +87,14 @@ function flat_zymphonies_theme_menu_local_tasks(&$variables) {
 /**
  * Override or insert variables into the node template.
  */
-function flat_zymphonies_theme_preprocess_node(&$variables) {
+function flat_zymphonies_preprocess_node(&$variables) {
   $node = $variables['node'];
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
     $variables['classes_array'][] = 'node-full';
   }
 }
 
-function medical_page_alter($page) {
+function flat_zymphonies_page_alter($page) {
   // <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
   $viewport = array(
     '#type' => 'html_tag',
