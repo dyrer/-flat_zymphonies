@@ -1,6 +1,7 @@
-name = Flat Responsive Theme
-description =  Flat Zymphonies Theme<br/>Developed & Designed by <a href="http://www.zymphonies.com">Zymphonies</a><br/>Contact us for Drupal Design & Development <a href="mailto:info@zymphonies.com">info@zymphonies.com</a> 
-core = 7.x
+name = Flat Zymphonies
+description =  Flat Zymphonies responsive theme<br/>Developed & Designed by <a href="http://www.zymphonies.com">Zymphonies</a><br/>Contact us for Drupal Design & Development <a href="mailto:info@zymphonies.com">info@zymphonies.com</a> 
+type = theme
+backdrop = 1.x
 
 engine = phptemplate
 stylesheets[all][] = css/jquery-ui.min.css
