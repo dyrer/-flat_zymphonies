@@ -14,13 +14,13 @@
 <html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>">
 
 <head>
-  <?php print $head; ?>
+  <?php backdrop_get_html_head($head); ?>
   <title><?php print $head_title; ?></title>
-  <?php print $styles; ?>
-  <?php print $scripts; ?>
+  <?php backdrop_get_css(); ?>
+  <?php backdrop_get_js(); ?>
 </head>
 
-<body class="<?php print $classes; ?>" <?php print $attributes;?>>
+<body class="<?php print implode(' ', $classes); ?>" <?php print backdrop_attributes($attributes);?>>
 
 <div id="wrapper">
   <header id="header" role="banner">
