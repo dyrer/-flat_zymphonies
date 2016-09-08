@@ -46,8 +46,8 @@
 <div  class="<?php print implode(' ', $classes); ?>"<?php print backdrop_attributes($attributes); ?>>
 
   <?php print render($title_prefix); ?>
-  <?php if (!empty($block->subject)): ?>
-    <h2><?php print $block->subject ?></h2>
+  <?php if (!empty($title)): ?>
+    <h2><?php print $title ?></h2>
   <?php endif;?>
   <?php print render($title_suffix); ?>
 
