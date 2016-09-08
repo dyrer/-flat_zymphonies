@@ -11,10 +11,9 @@
  */
 ?>
 <!DOCTYPE html>
-<html lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>">
 
 <head>
-  <?php backdrop_get_html_head($head); ?>
+  <?php backdrop_get_html_head(); ?>
   <title><?php print $head_title; ?></title>
   <?php backdrop_get_css(); ?>
   <?php backdrop_get_js(); ?>
@@ -22,7 +21,7 @@
 
 <body class="<?php print implode(' ', $classes); ?>" <?php print backdrop_attributes($attributes);?>>
 
-<div id="wrapper">
+<div id="layout">
   <header id="header" role="banner">
     <?php if ($logo): ?><div id="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>"/></a></div><?php endif; ?>
     <h1 id="site-title"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></h1>

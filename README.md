@@ -4,11 +4,11 @@ Zymphonies theme is a very modern and professional Drupal theme that is perfect 
 
 Drupal compatibility:
 ------------------------------
-This theme is compatible with Drupal 7.x.x
+This theme is compatible with Backdrop CMS 1.x.x
 
 Support & Customization:
 ------------------------------
-Email: info@zymphonies.com
+Email: dyrer@athanasiadis.me
 
 Design by:
 ------------------------------
@@ -17,3 +17,7 @@ FreeBiezz - www.freebiezz.com
 Developed by:
 ------------------------------
 Zymphonies - www.zymphonies.com
+
+Converted for Backdrop CMS
+------------------------------
+Athanasiadis Evagelos - www.athanasiadis.me

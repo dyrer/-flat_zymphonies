@@ -66,7 +66,7 @@
 ?>
 
 <div class="header">
-  <div class="menu-wrap">  
+  <div class="menu-wrap">
     <div class="full-wrap logo-wrap clearfix">
       <?php if ($logo): ?>
         <div id="logo">
@@ -88,7 +88,7 @@
   </div>
 
   <?php if ($is_front): ?>
-    <div class="homebanner">  
+    <div class="homebanner">
       <?php print render($page['home_banner_text']); ?>
     </div>
   <?php endif; ?>
@@ -98,8 +98,8 @@
 
 
 <?php if ($is_front): ?>
-  <div id="home-top-block">         
-   <?php if ($page['home_top_block_01'] || $page['home_top_block_02'] || $page['home_top_block_03']): ?> 
+  <div id="home-top-block">
+   <?php if ($page['home_top_block_01'] || $page['home_top_block_02'] || $page['home_top_block_03']): ?>
       <div id="top-area" class="page-wrap clearfix">
         <?php if ($page['home_top_block_01']): ?>
         <div class="column one"><?php print render($page['home_top_block_01']); ?></div>
@@ -114,12 +114,12 @@
     <?php endif; ?>
   </div>
 <?php endif; ?>
-  
 
 
 
 
-<div id="container">
+
+<div id="wrapper">
   <div class="container-wrap">
     <div class="content-sidebar-wrap">
       <div id="content">
@@ -147,12 +147,12 @@
         <?php if (!$is_front && $page['sidebar_first']): ?>
             <aside id="sidebar-first"><?php print render($page['sidebar_first']); ?></aside>
         <?php endif; ?>
-        
+
       </div>
 
       <!-- Second sidebar -->
       <?php if (!$is_front && $page['sidebar_second']): ?>
-        <aside id="sidebar-second"><?php print render($page['sidebar_second']); ?></aside> 
+        <aside id="sidebar-second"><?php print render($page['sidebar_second']); ?></aside>
       <?php endif; ?>
   </div>
 </div>
@@ -174,7 +174,7 @@
   </div>
 
   <div id="home-bottom-block" class="footer_block bottom_widget">
-    <?php if ($page['testimonials_block_01'] || $page['testimonials_block_02'] || $page['testimonials_block_03']): ?> 
+    <?php if ($page['testimonials_block_01'] || $page['testimonials_block_02'] || $page['testimonials_block_03']): ?>
       <div id="footer-area" class="full-wrap clearfix">
         <?php if ($page['testimonials_block_01']): ?>
         <div class="column"><?php print render($page['testimonials_block_01']); ?></div>
@@ -191,15 +191,15 @@
 
   <div class="parallax-block" id="home-block-three">
     <?php print render($page['home_block_04']); ?>
-  </div> 
-  
+  </div>
+
 <?php endif; ?>
 
 <!-- Footer -->
 
 <div id="footer">
 
-  <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third'] || $page['footer_forth']): ?> 
+  <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third'] || $page['footer_forth']): ?>
     <div id="footer-area" class="full-wrap clearfix">
       <?php if ($page['footer_first']): ?>
       <div class="column"><?php print render($page['footer_first']); ?></div>
@@ -217,12 +217,12 @@
   <?php endif; ?>
 
   <div class="footer_credit">
-      
+
     <div id="copyright" class="full-wrap clearfix">
 
-      <div class="copyright">&copy; <?php echo date("Y"); ?> <?php print $site_name; ?>. All Rights Reserved | <?php print t('Designed & Developed by'); ?><a href="http://www.zymphonies.com"> Zymphonies</a></div> 
-      
-      <!-- Social Links -->        
+      <div class="copyright">&copy; <?php echo date("Y"); ?> <?php print $site_name; ?>. All Rights Reserved | <?php print t('Designed & Developed by'); ?><a href="http://www.zymphonies.com"> Zymphonies</a></div>
+
+      <!-- Social Links -->
       <?php if (theme_get_setting('social_links')): ?>
         <span class="social-icons">
          <ul>
