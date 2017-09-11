@@ -2,7 +2,6 @@ name = Flat Zymphonies
 description =  Flat Zymphonies responsive theme<br/>Developed & Designed by <a href="http://www.zymphonies.com">Zymphonies</a><br/> Ported for Backdrop CMS by Evangelos Athanasiadis
 type = theme
 backdrop = 1.x
-type = theme
 
 stylesheets[all][] = css/jquery-ui.min.css
 stylesheets[all][] = css/font-awesome.css

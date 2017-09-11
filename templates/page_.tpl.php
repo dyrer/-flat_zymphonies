@@ -96,7 +96,6 @@
 </div>
 
 
-
 <?php if ($is_front): ?>
   <div id="home-top-block">
    <?php if ($page['home_top_block_01'] || $page['home_top_block_02'] || $page['home_top_block_03']): ?>
@@ -114,9 +113,6 @@
     <?php endif; ?>
   </div>
 <?php endif; ?>
-
-
-
 
 
 <div id="wrapper">
